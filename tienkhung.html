@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiii</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="center-text">
+    <h1 style="font-family: Arial">Em co yeu anh kooooo?</h1>
+    <button style="width: 100px; height: 30px; font-size: 20px; position: absolute; left: 870px"
+            onclick="replyClick()">Không</button>
+    <button id ="movingButton" style="width: 100px; height: 30px; font-size: 20px; position: absolute; left: 980px"
+            onmouseover="checkMouse()">Cóoooo</button>
+</div>
+<script>
+    function replyClick(){
+        alert("Thôi anh hiểu mà");
+    }
+    function checkMouse(){
+        var x = Math.floor(Math.random() * window.innerWidth) + 1;
+        var y = Math.floor(Math.random() * window.innerHeight) + 1;
+        var button = document.getElementById("movingButton");
+        button.style.left = x + "px";
+        button.style.top = y + "px";
+    }
+</script>
+</body>
+</html>

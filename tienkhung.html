@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hiii</title>
+    <title>Do You Love Me</title>
     <style>
         body, html {
             height: 100%;
@@ -10,24 +10,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #f8e6ef;
         }
 
         .center-text {
             text-align: center;
         }
+        h1 {
+            font-family: "Courier New";
+            color: #615754;
+        }
+        button {
+            background-color: #f3a4cf;
+            color: #9c0355;
+            font-family: "Bernard MT Condensed";
+        }
     </style>
 </head>
 <body>
 <div class="center-text">
-    <h1 style="font-family: Arial">Em co yeu anh kooooo?</h1>
-    <button style="width: 100px; height: 30px; font-size: 20px; position: absolute; left: 870px"
-            onclick="replyClick()">Không</button>
-    <button id ="movingButton" style="width: 100px; height: 30px; font-size: 20px; position: absolute; left: 980px"
-            onmouseover="checkMouse()">Cóoooo</button>
+    <h1>Do you love me?</h1>
+    <button style="width: 60px; height: 30px; font-size: 20px; position: absolute; left: 870px"
+            onclick="replyClick()">No</button>
+    <button id ="movingButton" style="width: 60px; height: 30px; font-size: 20px; position: absolute; left: 980px"
+            onmouseover="checkMouse()">Yes</button>
 </div>
 <script>
     function replyClick(){
-        alert("Thôi anh hiểu mà");
+        alert("Thôi anh hiểu rồi :<");
     }
     function checkMouse(){
         var x = Math.floor(Math.random() * window.innerWidth) + 1;
